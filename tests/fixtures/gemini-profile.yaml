@@ -1,0 +1,15 @@
+name: gemini-dial
+privacy:
+  magpie_no_accounts: true
+agents:
+  gemini:
+    route: magpie
+    auth: gemini-api-key
+    model: google/gemini-2.5-flash
+    base_url: http://127.0.0.1:3425
+failover:
+  group: gemini-quota
+  strategy: next
+  members:
+    - google/gemini-2.5-flash
+    - google/gemini-2.5-pro

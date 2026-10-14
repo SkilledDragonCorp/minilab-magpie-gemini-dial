@@ -1,0 +1,9 @@
+title = "minilab-magpie-gemini-dial"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Documented optional env name in .env.example (no secret values)"
+paths = ['''^\.env\.example$''']
+regexes = ['''(?i)GEMINI_API_KEY''']
