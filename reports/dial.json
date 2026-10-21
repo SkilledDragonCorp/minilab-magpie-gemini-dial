@@ -1,0 +1,55 @@
+{
+  "lab": "minilab-magpie-gemini-dial",
+  "keyless": true,
+  "generated_at": "2026-10-14T03:03:45Z",
+  "lab_sha": "42af807d8f6919dc34de07edd7ec7649625e2984",
+  "upstream_pin": "e297a8ab27461ed32b03ce8be0f9bf957a2e754d",
+  "upstream_repo": "yetone/magpie",
+  "magpie_no_accounts": true,
+  "python": "3.14.7",
+  "ruff": "ruff 0.17.0",
+  "pytest": "pytest 9.1.1",
+  "pytest_passed": 10,
+  "pytest_failed": 0,
+  "steps": [
+    {
+      "id": "uv_sync",
+      "ok": true,
+      "ms": 77
+    },
+    {
+      "id": "ruff_check",
+      "ok": true,
+      "ms": 142
+    },
+    {
+      "id": "ruff_format",
+      "ok": true,
+      "ms": 170
+    },
+    {
+      "id": "pytest",
+      "ok": true,
+      "ms": 3438
+    },
+    {
+      "id": "skills",
+      "ok": true,
+      "ms": 464
+    },
+    {
+      "id": "banned",
+      "ok": true,
+      "ms": 111
+    },
+    {
+      "id": "upstream_parity",
+      "ok": true,
+      "ms": 288
+    }
+  ],
+  "passed": 7,
+  "failed": 0,
+  "elapsed_ms": 4693,
+  "note": "Keyless lab suite only; upstream GTK (gofmt/vet/test) is Linux CI."
+}
